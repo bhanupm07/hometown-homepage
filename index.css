@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;500&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Unbounded", cursive;
+}
+
+:root {
+  --main-places: #f1faee;
+  --main-guidebg: #ffffff;
+  --guidebg: #a8dadc;
+  --parabg: #457b9d;
+  --headingbg: #1d3557;
+  --text: #1d3557;
+}
+
+/* .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.main-heading {
+  background-image: url("bilaspur.jpg");
+  background-size: cover;
+  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  background-color: var(--headingbg);
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.main-heading p {
+  background-color: var(--parabg);
+  font-size: 2rem;
+  color: #ffffff;
+  /* line-height: 2.1rem; */
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  max-width: 70rem;
+  text-align: center;
+}
+
+.main-heading p a {
+  color: var(--headingbg);
+  text-transform: uppercase;
+}
+
+.main-places {
+  background-color: var(--main-places);
+  padding: 5rem;
+  color: var(--text);
+}
+
+.main-places h2 {
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 3rem;
+}
+
+.places {
+  display: flex;
+  justify-content: space-between;
+}
+
+.place-div {
+  max-width: 28rem;
+  text-align: center;
+}
+
+.place-div h4 {
+  font-size: 1.5rem;
+  margin-bottom: 2.2rem;
+}
+
+.place-div p {
+  font-size: 1.5rem;
+  margin-bottom: 2.2rem;
+}
+
+.place-img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  margin-bottom: 2.2rem;
+}
+
+.place-div p a {
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.main-guide {
+  background-color: var(--main-guidebg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text);
+}
+
+.guide {
+  background-color: var(--guidebg);
+  display: flex;
+  /* justify-content: center;
+    align-items: center; */
+  margin: 5rem;
+  padding: 1.7rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  border-bottom: 1rem solid var(--headingbg);
+  /* max-width: 71rem; */
+}
+
+.avatar {
+  margin: 1.5rem 1.7rem 1.5rem 0rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+}
+
+.guide-data {
+  text-align: center;
+  max-width: 30rem;
+}
+
+.guide-data h2 {
+  font-size: 3rem;
+  margin: 4.7rem 0 2.5rem 0;
+}
+
+.guide-data p {
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.guide-data a {
+  font-size: 1.5rem;
+  color: var(--text);
+  font-weight: 700;
+}
+
+@media all and (max-width: 50rem) {
+  .places {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .guide {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .avatar {
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .guide-data h2 {
+    margin-top: 2.5rem;
+  }
+
+  .main-heading p {
+    max-width: 35rem;
+  }
+}
